@@ -1,0 +1,101 @@
+
+
+body {
+    background-image: url('./image.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+    height: 3em;
+    background-color: antiquewhite;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 365px;
+}
+.app input {
+    padding: .5em;
+    border: none;
+    background-color: antiquewhite;
+    outline: none;
+}
+.app button {
+    padding: .5em 1.2em;
+    border-radius: .5em;
+    background-color: rgb(0, 145, 255);
+    border-color: rgba(0, 0, 0, 0.705);
+    color : white;
+}
+.weather {
+    background-color: rgba(250, 235, 215, 0.879);
+    border-radius: .5em;
+    width: 300px;
+    padding: 2em;
+    margin-top: .8em;
+}
+.weatherHeader {
+    display : flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.weatherHeader div:first-child {
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+}
+.weatherHeader div:last-child {
+    display: flex;
+    justify-content: baseline;
+}
+.weatherInfo {
+    display: flex;
+    justify-content: space-between;
+    color : rgba(0, 0, 0, 0.435);
+}
+.weatherInfo div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    gap:.5em;
+}
+.weatherInfo div span:last-child {
+    color : rgba(0, 0, 0, 0.887);
+}
+.weatherIcons {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+.weatherIcons::-webkit-scrollbar {
+    height:.2em;
+}
+.weatherIcons::-webkit-scrollbar-thumb{
+    background-color: rgba(73, 68, 68, 0.408);
+    border-radius: 10px;
+}
+.weatherIcons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherIcons div span {
+  font-size: smaller;
+}
+.weatherIcons div span:nth-child(3){
+    opacity : .4;
+}
+.weatherIcons div span span:first-child {
+    color : rgba(255, 0, 0);
+    opacity: .4;
+}
+.weatherIcons div span span:last-child {
+    color : rgba(0, 0, 255);
+    opacity: .4;
+}
